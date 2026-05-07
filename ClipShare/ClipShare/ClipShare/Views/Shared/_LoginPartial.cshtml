@@ -1,0 +1,29 @@
+﻿@if (User.Identity.IsAuthenticated)
+{
+    <ul class="navbar-nav ">
+        <li class="nav-item">
+            <span class="nav-link text-info-emphasis fw-semibold" style="color:lawngreen text-transform: none;">
+                @User.GetName()
+            </span>
+        </li>
+        @if (User.IsInRole("Admin"))
+        {
+            <li class="nav-item">
+                <a class="nav-link text-white @Html.IsActive("Channel","Index")" asp-controller="Channel" asp-action="Index">My Channel</a>
+            </li>
+        }
+        <li class="nav-item">
+            <a class="btn btn-secondary" asp-controller="Account" asp-action="Logout">
+                <i class="bi bi-door-closed-fill"></i>
+                Logout
+            </a>
+        </li>
+    </ul>
+}
+else
+{
+    <div class="me-1">
+        <a class="btn btn-secondary me-2 @Html.IsActive(" Account", "Login" )" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+        <a class="btn btn-secondary me-2 @Html.IsActive(" Account", "Register" )" asp-area="" asp-controller="Account" asp-action="Register">SignUp</a>
+    </div>
+}

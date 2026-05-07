@@ -1,0 +1,155 @@
+﻿@{
+    ViewData["Title"] = "Categories";
+}
+<div class="p-4">
+    <h2>Categories</h2>
+    <div style="padding-top:15px"></div>
+    <button type="button" class="btn btn-primary actions" onclick="createRecord()">Create</button>
+    <div style="padding-top:15px"></div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tablebody">
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script>
+        var category = [];
+
+        $(document).ready(function () {
+            GetCategories();
+        });
+
+        function GetCategories() {
+            $.ajax({
+                url: "/Admin/GetCategories",
+                type: "GET",
+                dataType: "json",
+                success: function (data) {
+                    category = data.result;
+                    $('#tablebody').empty();
+                    $.each(category, function (index, value) {
+                        const trtag = `<tr id="trId_${index}"><td ></td><td ></td><td ></td></tr>`;
+                        $('#tablebody').append(trtag);
+                        displayTableRow('display', index, value.id, value.name);
+                    });
+                }
+            });
+        }
+
+        function displayTableRow(mode, index, id, name) {
+
+            $('#trId_' + index).empty();
+
+            let innerHtml = "";
+            innerHtml += `<td style="text-align: center">${id}</td>`;
+
+            if (mode == 'display') {
+
+                $('.actions').prop('disabled', false);
+
+                innerHtml += `<td>
+                    <input id="inputid_${index}" type="text" class="form-control" value="${name}" disabled />
+                </td>`;
+
+                innerHtml += `<td>
+                    <button onclick="displayTableRow('edit', ${index}, ${id}, '${name}')" class="btn btn-warning text-white me-2 actions">Edit</button>
+                    <button onclick="deleterecord(${id}, '${name}')" class="btn btn-danger text-white me-2 actions">Delete</button>
+                </td>`;
+
+            } else {
+
+                $('.actions').prop('disabled', true);
+
+                innerHtml += `<td>
+                    <input id="inputid_${index}" type="text" class="form-control" value="${name}"/>
+                    <span class="text-danger" id="validationTextId_${index}"></span>
+                </td>`;
+
+                innerHtml += `<td>
+                    <button onclick="save(${index}, ${id})" class="btn btn-success text-white me-2 actions">Save</button>
+                    <button onclick="displayTableRow('display', ${index}, ${id}, '${name}')" class="btn btn-danger text-white me-2 actions">Cancel</button>
+                </td>`;
+            }
+
+            $('#trId_' + index).append(innerHtml);
+        }
+
+        function createRecord() {
+
+            $('.actions').prop('disabled', true);
+
+            const index = category.length;
+
+            let innerHtml = `<tr id="trId_${index}"><td></td><td>
+                <input type="text" class="form-control" id="inputid_${index}"/>
+                <span class="text-danger" id="validationTextId_${index}"></span>
+            </td><td id="tdActionId_${index}"></td></tr>`;
+
+            $('#tablebody').append(innerHtml);
+
+            const $IdActionId = $('#tdActionId_' + index);
+            const $saveButton = $('<button class="btn btn-success text-white me-2">Save</button>');
+            const $CancelButton = $('<button class="btn btn-danger text-white">Cancel</button>');
+
+            $IdActionId.append($saveButton);
+            $IdActionId.append($CancelButton);
+
+            $saveButton.on('click', function () {
+                save(index, 0);
+            });
+
+            $CancelButton.on('click', function () {
+                $('#trId_' + index).remove();
+                $('.actions').prop('disabled', false);
+            });
+        }
+
+        function save(index, id) {
+
+            const name = $('#inputid_' + index).val();
+
+            if (name !== "") {
+                const model = {
+                    id: id,
+                    name: name
+                };
+
+                $.ajax({
+                    url: "/Admin/AddEditCategory",
+                    type: "POST",
+                    data: model,
+                    success: function (data) {
+                        GetCategories();
+                    }
+                })
+            } else {
+                $('#validationTextId_' + index).text('Name Is Required.');
+            }
+        }
+
+        async function deleterecord(id, name) {
+            if (confirm(`آیا از حذف رکورد "${name}" مطمئن هستید؟`)) {
+                $.ajax({
+                    url: "/Admin/DeleteCategory/" + id,
+                    type: "DELETE",
+                    success: function (data) {
+                        GetCategories();
+                        alert('رکورد با موفقیت حذف شد.');
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Error deleting record:", error);
+                        alert('خطا در حذف رکورد. لطفا دوباره امتحان کنید.');
+                    }
+                });
+            }
+        }
+    </script>
+}

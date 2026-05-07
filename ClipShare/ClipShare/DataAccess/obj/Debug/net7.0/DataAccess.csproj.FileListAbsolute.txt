@@ -1,0 +1,15 @@
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\DataAccess\bin\Debug\net7.0\DataAccess.deps.json
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\DataAccess\bin\Debug\net7.0\DataAccess.dll
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\DataAccess\bin\Debug\net7.0\DataAccess.pdb
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\DataAccess\obj\Debug\net7.0\DataAccess.csproj.AssemblyReference.cache
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\DataAccess\obj\Debug\net7.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfoInputs.cache
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfo.cs
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\DataAccess\obj\Debug\net7.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\DataAccess\obj\Debug\net7.0\DataAccess.dll
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\DataAccess\obj\Debug\net7.0\refint\DataAccess.dll
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\DataAccess\obj\Debug\net7.0\DataAccess.pdb
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\DataAccess\obj\Debug\net7.0\ref\DataAccess.dll
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\DataAccess\bin\Debug\net7.0\DataAccess.runtimeconfig.json
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\DataAccess\obj\Debug\net7.0\DataAccess.genruntimeconfig.cache
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\DataAccess\obj\Debug\net7.0\DataAccess.csproj.Up2Date

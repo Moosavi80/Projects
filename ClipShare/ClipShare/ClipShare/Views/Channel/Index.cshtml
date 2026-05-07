@@ -1,0 +1,213 @@
+﻿@model ClipShare_Youtube_.ViewModels.Channel.Channel_vm
+
+@{
+    ViewData["Title"] = "Channels";
+}
+
+
+@if (!string.IsNullOrEmpty(Model.Name))
+{
+    <ul class="nav nav-tabs mt-3">
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#myvideos">My Videos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#analytics">Analytics</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#profile">Profile</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+
+        <!-- #################### My Videos Tab #################### -->
+        <div class="tab-pane fade mt-3" id="myvideos">
+            <h5 class="mb-3">My Videos</h5>
+
+            @*  @if (Model.MyVideos != null && Model.MyVideos.Any())
+            {
+                <div class="row">
+                    @foreach (var video in Model.MyVideos)
+                    {
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="card shadow-sm h-100">
+                                <img src="@video.ThumbnailUrl" class="card-img-top" alt="@video.Title" />
+                                <div class="card-body">
+                                    <h6 class="card-title">@video.Title</h6>
+                                    <p class="text-muted small mb-1">@video.UploadDate.ToString("yyyy/MM/dd")</p>
+                                    <a href="@Url.Action("Watch", "Video", new { id = video.Id })" class="btn btn-primary btn-sm w-100">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+            else 
+            {*@
+            <div class="alert alert-info">No videos uploaded yet.</div>
+            @*}*@
+        </div>
+
+
+        <!-- #################### Analytics Tab #################### -->
+        <div class="tab-pane fade mt-3" id="analytics">
+            <h5 class="mb-3">Analytics</h5>
+
+            @* @if (Model.Analytics != null)
+            {
+                <div class="row text-center">
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="border rounded p-3">
+                            <h6>Total Views</h6>
+                            <span class="fs-4 fw-bold">@Model.Analytics.TotalViews</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="border rounded p-3">
+                            <h6>Total Subscribers</h6>
+                            <span class="fs-4 fw-bold">@Model.Analytics.Subscribers</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="border rounded p-3">
+                            <h6>Videos Uploaded</h6>
+                            <span class="fs-4 fw-bold">@Model.MyVideos?.Count() ?? 0</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="border rounded p-3">
+                            <h6>Average Likes</h6>
+                            <span class="fs-4 fw-bold">@Model.Analytics.AvgLikes</span>
+                        </div>
+                    </div>
+                </div>
+            } 
+            else
+            {*@
+            <div class="alert alert-warning">No analytics data found.</div>
+            @*}*@
+        </div>
+
+
+        <!-- #################### Profile Tab #################### -->
+        <div class="tab-pane fade mt-3" id="profile">
+            <h5 class="mb-3">Channel Profile</h5>
+
+            <form asp-action="EditProfile" method="post">
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label fw-bold"></label>
+                            <input id="profile_name" asp-for="Name" type="text" class="form-control" disabled />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="About" class="form-label fw-bold"></label>
+                            <textarea id="profile_about" asp-for="About" class="form-control" rows="6" disabled></textarea>
+                            <span asp-validation-for="About" class="text-danger"></span>
+                        </div>
+
+                        <div class="row" id="divEditButton">
+                            <div class="col">
+                                <div class="d-flex justify-content-end">
+                                    <button type="button" class="btn btn-outline-secondary" onclick="editprofile()">Edit</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="updateProfileButtons" style="display: none;">
+                            <div class="offset-3 col-6">
+                                <div class="row">
+                                    <div class="col d-grid">
+                                        <button class="btn btn-success" type="submit">Update</button>
+                                    </div>
+                                    <div class="col d-grid">
+                                        <button class="btn btn-danger" type="button" onclick="cancelEdit()">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- ######################################################## -->
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+
+        <script>
+            $(function () {
+                // ذخیره تب فعال در localStorage
+                $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+                    localStorage.setItem('activeTab', $(e.target).attr('href'));
+                });
+
+                // بازیابی آخرین تب فعال
+                var activeTab = localStorage.getItem('activeTab');
+                if (activeTab) {
+                    $('a[href="' + activeTab + '"]').tab('show');
+                } else {
+                    $('a[href="#myvideos"]').tab('show');
+                }
+            });
+
+            // توابع کنترل حالت ویرایش
+            function editprofile() {
+                $("#profile_name, #profile_about").prop("disabled", false);
+                $("#divEditButton").hide();
+                $("#updateProfileButtons").show();
+            }
+
+            function cancelEdit() {
+                $("#profile_name, #profile_about").prop("disabled", true);
+                $("#divEditButton").show();
+                $("#updateProfileButtons").hide();
+            }
+        </script>
+    }
+}
+else
+{
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-5">
+            <div class="card shadow border-0">
+                <div class="card-header bg-primary text-white text-center">
+                    <h4 class="mb-0">Create Channel</h4>
+                </div>
+
+                <div class="card-body">
+                    <form asp-action="Create" asp-controller="Channel" method="post" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Channel Name :</label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">About :</label>
+                            <input asp-for="About" class="form-control" />
+                            <span asp-validation-for="About" class="text-danger"></span>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success px-4">
+                                Create Channel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

@@ -1,0 +1,59 @@
+﻿@model ClipShare_Youtube_.ViewModels.Account.Login_VM
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-5 col-lg-4">
+        <div class="card shadow-sm border-0">
+
+            <div class="card-header bg-primary text-white text-center">
+                <h5 class="mb-0">Login</h5>
+            </div>
+
+            <div class="card-body p-4">
+
+                <form asp-action="Login" asp-controller="Account" method="post" novalidate>
+
+                    @Html.HiddenFor(x => x.ReturnUrl)
+
+                    <div class="mb-3">
+
+                        <label asp-for="UserName" class="form-label"></label>
+                        <input asp-for="UserName"
+                               class="form-control"
+                               placeholder="Username or Email" />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Password" class="form-label"></label>
+                        <input asp-for="Password"
+                               type="password"
+                               class="form-control"
+                               placeholder="Password" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        Login
+                    </button>
+
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger mt-3 text-center">
+                            @ViewBag.Error
+                        </div>
+                    }
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
