@@ -1,0 +1,389 @@
+[
+  {
+    "ContainingType": "WebApi_FirstProject_EF.Routes.ClassRoutes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapClassRoutes\u003Eb__0_0",
+    "RelativePath": "api/v1/Class/Create",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "service",
+        "Type": "WebApi_FirstProject_EF.Response.ClassCreateParams",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi_FirstProject_EF.Response.BaseResponse\u00601[[WebApi_FirstProject_EF.Response.ClassResponseParams, WebApi_FirstProject_EF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Class"
+    ]
+  },
+  {
+    "ContainingType": "WebApi_FirstProject_EF.Routes.ClassRoutes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapClassRoutes\u003Eb__0_4",
+    "RelativePath": "api/v1/Class/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi_FirstProject_EF.Response.BaseResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Class"
+    ]
+  },
+  {
+    "ContainingType": "WebApi_FirstProject_EF.Routes.ClassRoutes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapClassRoutes\u003Eb__0_1",
+    "RelativePath": "api/v1/Class/GetAllClass",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi_FirstProject_EF.Response.BaseResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[WebApi_FirstProject_EF.Response.ClassResponseParams, WebApi_FirstProject_EF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Class"
+    ]
+  },
+  {
+    "ContainingType": "WebApi_FirstProject_EF.Routes.ClassRoutes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapClassRoutes\u003Eb__0_2",
+    "RelativePath": "api/v1/Class/GetClassById/{Id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi_FirstProject_EF.Response.BaseResponse\u00601[[WebApi_FirstProject_EF.Response.ClassResponseParams, WebApi_FirstProject_EF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Class"
+    ]
+  },
+  {
+    "ContainingType": "WebApi_FirstProject_EF.Routes.ClassRoutes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapClassRoutes\u003Eb__0_3",
+    "RelativePath": "api/v1/Class/Update",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Params",
+        "Type": "WebApi_FirstProject_EF.Response.User.ClassUpdateParams",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi_FirstProject_EF.Response.BaseResponse\u00601[[WebApi_FirstProject_EF.Response.ClassResponseParams, WebApi_FirstProject_EF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Class"
+    ]
+  },
+  {
+    "ContainingType": "WebApi_FirstProject_EF.Routes.SchoolRoutes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapSchoolRoutes\u003Eb__0_0",
+    "RelativePath": "api/v1/School/Create",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "service",
+        "Type": "WebApi_FirstProject_EF.Response.SchoolCreateParams",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi_FirstProject_EF.Response.BaseResponse\u00601[[WebApi_FirstProject_EF.Response.SchoolResponseParams, WebApi_FirstProject_EF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "School"
+    ]
+  },
+  {
+    "ContainingType": "WebApi_FirstProject_EF.Routes.SchoolRoutes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapSchoolRoutes\u003Eb__0_4",
+    "RelativePath": "api/v1/School/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi_FirstProject_EF.Response.BaseResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "School"
+    ]
+  },
+  {
+    "ContainingType": "WebApi_FirstProject_EF.Routes.SchoolRoutes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapSchoolRoutes\u003Eb__0_1",
+    "RelativePath": "api/v1/School/GetAllSchool",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi_FirstProject_EF.Response.BaseResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[WebApi_FirstProject_EF.Response.SchoolResponseParams, WebApi_FirstProject_EF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "School"
+    ]
+  },
+  {
+    "ContainingType": "WebApi_FirstProject_EF.Routes.SchoolRoutes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapSchoolRoutes\u003Eb__0_2",
+    "RelativePath": "api/v1/School/GetSchoolById/{Id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi_FirstProject_EF.Response.BaseResponse\u00601[[WebApi_FirstProject_EF.Response.SchoolResponseParams, WebApi_FirstProject_EF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "School"
+    ]
+  },
+  {
+    "ContainingType": "WebApi_FirstProject_EF.Routes.SchoolRoutes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapSchoolRoutes\u003Eb__0_3",
+    "RelativePath": "api/v1/School/Update",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Params",
+        "Type": "WebApi_FirstProject_EF.Response.User.SchoolUpdateParams",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi_FirstProject_EF.Response.BaseResponse\u00601[[WebApi_FirstProject_EF.Response.SchoolResponseParams, WebApi_FirstProject_EF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "School"
+    ]
+  },
+  {
+    "ContainingType": "WebApi_FirstProject_EF.Routes.UserRoutes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapUserRoutes\u003Eb__0_0",
+    "RelativePath": "api/v1/User/Create",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "service",
+        "Type": "WebApi_FirstProject_EF.Response.UserCreateParams",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi_FirstProject_EF.Response.UserResponseParams",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Users"
+    ]
+  },
+  {
+    "ContainingType": "WebApi_FirstProject_EF.Routes.UserRoutes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapUserRoutes\u003Eb__0_4",
+    "RelativePath": "api/v1/User/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi_FirstProject_EF.Response.BaseResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Users"
+    ]
+  },
+  {
+    "ContainingType": "WebApi_FirstProject_EF.Routes.UserRoutes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapUserRoutes\u003Eb__0_1",
+    "RelativePath": "api/v1/User/GetAllUsers",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi_FirstProject_EF.Response.BaseResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[WebApi_FirstProject_EF.Response.UserResponseParams, WebApi_FirstProject_EF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Users"
+    ]
+  },
+  {
+    "ContainingType": "WebApi_FirstProject_EF.Routes.UserRoutes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapUserRoutes\u003Eb__0_2",
+    "RelativePath": "api/v1/User/GetUsersById/{Id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi_FirstProject_EF.Response.BaseResponse\u00601[[WebApi_FirstProject_EF.Response.UserResponseParams, WebApi_FirstProject_EF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Users"
+    ]
+  },
+  {
+    "ContainingType": "WebApi_FirstProject_EF.Routes.UserRoutes\u002B\u003C\u003Ec",
+    "Method": "\u003CMapUserRoutes\u003Eb__0_3",
+    "RelativePath": "api/v1/User/Update",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Params",
+        "Type": "WebApi_FirstProject_EF.Response.User.UserUpdateParams",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi_FirstProject_EF.Response.BaseResponse\u00601[[WebApi_FirstProject_EF.Response.UserResponseParams, WebApi_FirstProject_EF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Users"
+    ]
+  }
+]
