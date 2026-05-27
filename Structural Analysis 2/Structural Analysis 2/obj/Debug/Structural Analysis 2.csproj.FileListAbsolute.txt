@@ -1,0 +1,10 @@
+E:\solution_visual\Structural Analysis 2\Structural Analysis 2\bin\Debug\Structural Analysis 2.exe.config
+E:\solution_visual\Structural Analysis 2\Structural Analysis 2\bin\Debug\Structural Analysis 2.exe
+E:\solution_visual\Structural Analysis 2\Structural Analysis 2\bin\Debug\Structural Analysis 2.pdb
+E:\solution_visual\Structural Analysis 2\Structural Analysis 2\obj\Debug\Structural Analysis 2.csprojResolveAssemblyReference.cache
+E:\solution_visual\Structural Analysis 2\Structural Analysis 2\obj\Debug\Structural_Analysis_2.CheckParameters.resources
+E:\solution_visual\Structural Analysis 2\Structural Analysis 2\obj\Debug\Structural_Analysis_2.Form1.resources
+E:\solution_visual\Structural Analysis 2\Structural Analysis 2\obj\Debug\Structural_Analysis_2.Properties.Resources.resources
+E:\solution_visual\Structural Analysis 2\Structural Analysis 2\obj\Debug\Structural Analysis 2.csproj.GenerateResource.Cache
+E:\solution_visual\Structural Analysis 2\Structural Analysis 2\obj\Debug\Structural Analysis 2.exe
+E:\solution_visual\Structural Analysis 2\Structural Analysis 2\obj\Debug\Structural Analysis 2.pdb

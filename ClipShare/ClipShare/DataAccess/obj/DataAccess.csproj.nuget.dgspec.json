@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\solution_visual\\MVCProject_ClipShare\\ClipShare(Youtube)\\DataAccess\\DataAccess.csproj": {}
+    "D:\\GitHub\\Moosavi\\ClipShare\\ClipShare\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "D:\\solution_visual\\MVCProject_ClipShare\\ClipShare(Youtube)\\DataAccess\\DataAccess.csproj": {
+    "D:\\GitHub\\Moosavi\\ClipShare\\ClipShare\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\solution_visual\\MVCProject_ClipShare\\ClipShare(Youtube)\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "D:\\GitHub\\Moosavi\\ClipShare\\ClipShare\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "D:\\solution_visual\\MVCProject_ClipShare\\ClipShare(Youtube)\\DataAccess\\DataAccess.csproj",
+        "projectPath": "D:\\GitHub\\Moosavi\\ClipShare\\ClipShare\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
-        "outputPath": "D:\\solution_visual\\MVCProject_ClipShare\\ClipShare(Youtube)\\DataAccess\\obj\\",
+        "outputPath": "D:\\GitHub\\Moosavi\\ClipShare\\ClipShare\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
