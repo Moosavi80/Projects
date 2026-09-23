@@ -1,0 +1,2897 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "PropertyManagementProject",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/v1/Auth/Login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginResponseBaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Auth/Refresh": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshTokenRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshTokenRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshTokenRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginResponseBaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Auth/Logout": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LogoutRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LogoutRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LogoutRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Auth/ChangePassword": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePasswordRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePasswordRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePasswordRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Block/ChangeStatus": {
+      "post": {
+        "tags": [
+          "Block"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusBlock"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusBlock"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusBlock"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Block/Delete": {
+      "post": {
+        "tags": [
+          "Block"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteBlockRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteBlockRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteBlockRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Block/Insert": {
+      "post": {
+        "tags": [
+          "Block"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Block_InsUp"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Block_InsUp"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Block_InsUp"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Block/Update": {
+      "post": {
+        "tags": [
+          "Block"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Block_InsUp"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Block_InsUp"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Block_InsUp"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Block/GetAll": {
+      "post": {
+        "tags": [
+          "Block"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Block_Search"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Block_Search"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Block_Search"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BlockResponseListBaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Block/GetById": {
+      "post": {
+        "tags": [
+          "Block"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetBlocksById"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetBlocksById"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetBlocksById"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BlockResponseBaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/BoardMembers/ChangeStatus": {
+      "post": {
+        "tags": [
+          "BoardMembers"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusBoardMembers"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusBoardMembers"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusBoardMembers"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/BoardMembers/Delete": {
+      "post": {
+        "tags": [
+          "BoardMembers"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteBoardMembersRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteBoardMembersRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteBoardMembersRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/BoardMembers/Insert": {
+      "post": {
+        "tags": [
+          "BoardMembers"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BoardMembers_InsUp"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BoardMembers_InsUp"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BoardMembers_InsUp"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/BoardMembers/Update": {
+      "post": {
+        "tags": [
+          "BoardMembers"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BoardMembers_InsUp"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BoardMembers_InsUp"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BoardMembers_InsUp"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/BoardMembers/GetAll": {
+      "post": {
+        "tags": [
+          "BoardMembers"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BoardMembers_Search"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BoardMembers_Search"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BoardMembers_Search"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BoardMembersResponseListBaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/BoardMembers/GetById": {
+      "post": {
+        "tags": [
+          "BoardMembers"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetBoardMembersById"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetBoardMembersById"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetBoardMembersById"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BoardMembersResponseBaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/OfficialExperts/ChangeStatus": {
+      "post": {
+        "tags": [
+          "OfficialExperts"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusOfficialExperts"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusOfficialExperts"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusOfficialExperts"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/OfficialExperts/Delete": {
+      "post": {
+        "tags": [
+          "OfficialExperts"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteOfficialExpertsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteOfficialExpertsRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteOfficialExpertsRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/OfficialExperts/Insert": {
+      "post": {
+        "tags": [
+          "OfficialExperts"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OfficialExperts_InsUp"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OfficialExperts_InsUp"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OfficialExperts_InsUp"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/OfficialExperts/Update": {
+      "post": {
+        "tags": [
+          "OfficialExperts"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OfficialExperts_InsUp"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OfficialExperts_InsUp"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OfficialExperts_InsUp"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/OfficialExperts/GetAll": {
+      "post": {
+        "tags": [
+          "OfficialExperts"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OfficialExperts_Search"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OfficialExperts_Search"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OfficialExperts_Search"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OfficialExpertsResponseListBaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/OfficialExperts/GetById": {
+      "post": {
+        "tags": [
+          "OfficialExperts"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetOfficialExpertsById"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetOfficialExpertsById"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetOfficialExpertsById"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OfficialExpertsResponseBaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Plot/ChangeStatus": {
+      "post": {
+        "tags": [
+          "Plot"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusPlot"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusPlot"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusPlot"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Plot/Delete": {
+      "post": {
+        "tags": [
+          "Plot"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeletePlotRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeletePlotRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeletePlotRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Plot/Insert": {
+      "post": {
+        "tags": [
+          "Plot"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Plot_InsUp"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Plot_InsUp"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Plot_InsUp"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Plot/Update": {
+      "post": {
+        "tags": [
+          "Plot"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Plot_InsUp"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Plot_InsUp"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Plot_InsUp"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Plot/GetAll": {
+      "post": {
+        "tags": [
+          "Plot"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Plot_Search"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Plot_Search"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Plot_Search"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlotResponseListBaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Plot/GetById": {
+      "post": {
+        "tags": [
+          "Plot"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetPlotsById"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetPlotsById"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetPlotsById"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlotResponseBaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Plot/GetLandUseType": {
+      "get": {
+        "tags": [
+          "Plot"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LandUseTypeResponseListBaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/TownShip/ChangeStatus": {
+      "post": {
+        "tags": [
+          "TownShip"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusTownShip"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusTownShip"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusTownShip"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/TownShip/Delete": {
+      "post": {
+        "tags": [
+          "TownShip"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteTownShipRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteTownShipRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteTownShipRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/TownShip/Insert": {
+      "post": {
+        "tags": [
+          "TownShip"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TownShip_InsUp"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TownShip_InsUp"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TownShip_InsUp"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/TownShip/Update": {
+      "post": {
+        "tags": [
+          "TownShip"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TownShip_InsUp"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TownShip_InsUp"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TownShip_InsUp"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/TownShip/GetAll": {
+      "get": {
+        "tags": [
+          "TownShip"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TownShipResponseListBaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/TownShip/GetById": {
+      "post": {
+        "tags": [
+          "TownShip"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetTownShipById"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetTownShipById"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetTownShipById"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TownShipResponseBaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/TownShip/TownShipSearch": {
+      "post": {
+        "tags": [
+          "TownShip"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TownShip_Search"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TownShip_Search"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TownShip_Search"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TownShipResponseListBaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/User/ChangeStatus": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusUser"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusUser"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeStatusUser"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/User/Delete": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteUserRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteUserRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteUserRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/User/Insert": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserInsert_Update"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserInsert_Update"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserInsert_Update"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/User/Update": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserInsert_Update"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserInsert_Update"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserInsert_Update"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/User/GetAll": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserResponseListBaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/User/GetById": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUserById"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUserById"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUserById"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserResponseBaseResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BlockResponse": {
+        "type": "object",
+        "properties": {
+          "blockNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "blockName": {
+            "type": "string",
+            "nullable": true
+          },
+          "townShipName": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusText": {
+            "type": "string",
+            "nullable": true
+          },
+          "totalCount": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BlockResponseBaseResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/BlockResponse"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BlockResponseListBaseResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BlockResponse"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Block_InsUp": {
+        "required": [
+          "blockName",
+          "blockNumber",
+          "townShipNumber"
+        ],
+        "type": "object",
+        "properties": {
+          "townShipNumber": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "blockNumber": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "blockName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Block_Search": {
+        "required": [
+          "offSet",
+          "page",
+          "type",
+          "typeStatus",
+          "value"
+        ],
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "integer",
+            "description": "-1 => Default Value , 1 => TownShip Search , 2=> Block Search",
+            "format": "int32"
+          },
+          "typeStatus": {
+            "type": "integer",
+            "description": "0 => Default Value , 1 => Active , 2 => DeActive",
+            "format": "int32"
+          },
+          "value": {
+            "type": "string",
+            "nullable": true
+          },
+          "page": {
+            "type": "string",
+            "description": "Default Value => 1",
+            "nullable": true
+          },
+          "offSet": {
+            "type": "string",
+            "description": "Default Value => 10",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BoardMembersResponse": {
+        "type": "object",
+        "properties": {
+          "boardMembersNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "familyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "birthCertificateNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "nationalNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "fatherName": {
+            "type": "string",
+            "nullable": true
+          },
+          "birthDay": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "mobileNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusText": {
+            "type": "string",
+            "nullable": true
+          },
+          "totalCount": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BoardMembersResponseBaseResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/BoardMembersResponse"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BoardMembersResponseListBaseResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BoardMembersResponse"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BoardMembers_InsUp": {
+        "required": [
+          "birthCertificateNumber",
+          "birthDay",
+          "boardMembersNumber",
+          "familyName",
+          "fatherName",
+          "name",
+          "nationalNumber"
+        ],
+        "type": "object",
+        "properties": {
+          "boardMembersNumber": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "name": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "familyName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "birthCertificateNumber": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string"
+          },
+          "nationalNumber": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string"
+          },
+          "fatherName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "birthDay": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "mobileNumber": {
+            "maxLength": 14,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BoardMembers_Search": {
+        "required": [
+          "offSet",
+          "page",
+          "type",
+          "typeStatus",
+          "value"
+        ],
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "integer",
+            "description": "-1 => Default Value , 1 => FamilyName Search",
+            "format": "int32"
+          },
+          "typeStatus": {
+            "type": "integer",
+            "description": "0 => Default Value , 1 => Active , 2 => DeActive",
+            "format": "int32"
+          },
+          "value": {
+            "type": "string",
+            "nullable": true
+          },
+          "page": {
+            "type": "string",
+            "description": "Default Value => 1",
+            "nullable": true
+          },
+          "offSet": {
+            "type": "string",
+            "description": "Default Value => 10",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChangePasswordRequest": {
+        "required": [
+          "newPassword",
+          "newUserName",
+          "oldPassword"
+        ],
+        "type": "object",
+        "properties": {
+          "newUserName": {
+            "type": "string",
+            "nullable": true
+          },
+          "oldPassword": {
+            "type": "string",
+            "nullable": true
+          },
+          "newPassword": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChangeStatusBlock": {
+        "required": [
+          "number",
+          "status"
+        ],
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChangeStatusBoardMembers": {
+        "required": [
+          "number",
+          "status"
+        ],
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChangeStatusOfficialExperts": {
+        "required": [
+          "number",
+          "status"
+        ],
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChangeStatusPlot": {
+        "required": [
+          "number",
+          "status"
+        ],
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChangeStatusTownShip": {
+        "required": [
+          "number",
+          "status"
+        ],
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChangeStatusUser": {
+        "required": [
+          "id",
+          "status"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeleteBlockRequest": {
+        "required": [
+          "number"
+        ],
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeleteBoardMembersRequest": {
+        "required": [
+          "number"
+        ],
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeleteOfficialExpertsRequest": {
+        "required": [
+          "number"
+        ],
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeletePlotRequest": {
+        "required": [
+          "number"
+        ],
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeleteTownShipRequest": {
+        "required": [
+          "number"
+        ],
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeleteUserRequest": {
+        "required": [
+          "number"
+        ],
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetBlocksById": {
+        "required": [
+          "blockNumber"
+        ],
+        "type": "object",
+        "properties": {
+          "blockNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetBoardMembersById": {
+        "required": [
+          "boardMembersNumber"
+        ],
+        "type": "object",
+        "properties": {
+          "boardMembersNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetOfficialExpertsById": {
+        "required": [
+          "officialExpertsNumber"
+        ],
+        "type": "object",
+        "properties": {
+          "officialExpertsNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetPlotsById": {
+        "required": [
+          "plotNumber"
+        ],
+        "type": "object",
+        "properties": {
+          "plotNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetTownShipById": {
+        "required": [
+          "number"
+        ],
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetUserById": {
+        "required": [
+          "number"
+        ],
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LandUseTypeResponse": {
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LandUseTypeResponseListBaseResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LandUseTypeResponse"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginRequest": {
+        "required": [
+          "password",
+          "username"
+        ],
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginResponse": {
+        "required": [
+          "accessToken",
+          "refreshToken",
+          "userId",
+          "userName"
+        ],
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "accessToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "refreshToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "changePassword": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginResponseBaseResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/LoginResponse"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LogoutRequest": {
+        "required": [
+          "refreshToken"
+        ],
+        "type": "object",
+        "properties": {
+          "refreshToken": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OfficialExpertsResponse": {
+        "type": "object",
+        "properties": {
+          "officialExpertsNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "name_Family": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "family": {
+            "type": "string",
+            "nullable": true
+          },
+          "nationalNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "mobileNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "expertLicenseNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusText": {
+            "type": "string",
+            "nullable": true
+          },
+          "totalCount": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OfficialExpertsResponseBaseResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/OfficialExpertsResponse"
+          }
+        },
+        "additionalProperties": false
+      },
+      "OfficialExpertsResponseListBaseResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OfficialExpertsResponse"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OfficialExperts_InsUp": {
+        "required": [
+          "expertLicenseNumber",
+          "familyName",
+          "name",
+          "nationalNumber",
+          "officialExpertsNumber"
+        ],
+        "type": "object",
+        "properties": {
+          "officialExpertsNumber": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "name": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "familyName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "expertLicenseNumber": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string"
+          },
+          "nationalNumber": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string"
+          },
+          "mobileNumber": {
+            "maxLength": 14,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OfficialExperts_Search": {
+        "required": [
+          "offSet",
+          "page",
+          "type",
+          "typeStatus",
+          "value"
+        ],
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "integer",
+            "description": "-1 => Default Value , 1 => Name And FamilyName Search , 2 => ExpertLicenseNumber Search",
+            "format": "int32"
+          },
+          "typeStatus": {
+            "type": "integer",
+            "description": "0 => Default Value , 1 => Active , 2 => DeActive",
+            "format": "int32"
+          },
+          "value": {
+            "type": "string",
+            "nullable": true
+          },
+          "page": {
+            "type": "string",
+            "description": "Default Value => 1",
+            "nullable": true
+          },
+          "offSet": {
+            "type": "string",
+            "description": "Default Value => 10",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PlotResponse": {
+        "type": "object",
+        "properties": {
+          "townShipNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "blockNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "plotNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "townShipName": {
+            "type": "string",
+            "nullable": true
+          },
+          "blockName": {
+            "type": "string",
+            "nullable": true
+          },
+          "plotName": {
+            "type": "string",
+            "nullable": true
+          },
+          "area": {
+            "type": "string",
+            "nullable": true
+          },
+          "landUseTypeNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "landUseTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "cadastralNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusText": {
+            "type": "string",
+            "nullable": true
+          },
+          "totalCount": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PlotResponseBaseResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/PlotResponse"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PlotResponseListBaseResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PlotResponse"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Plot_InsUp": {
+        "required": [
+          "area",
+          "blockNumber",
+          "cadastralNumber",
+          "landUseType",
+          "plotName",
+          "plotNumber",
+          "townShipNumber"
+        ],
+        "type": "object",
+        "properties": {
+          "townShipNumber": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "blockNumber": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "plotNumber": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "plotName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "area": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string"
+          },
+          "landUseType": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "cadastralNumber": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Plot_Search": {
+        "required": [
+          "offSet",
+          "page",
+          "subType",
+          "subValue",
+          "type",
+          "typeStatus",
+          "value"
+        ],
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "integer",
+            "description": "-1 => Default Value , 1 => TownShip Search , 2=> Block Search , 3=> Plots Search\r\n4 => CadastralNumber Search , 5 => LandUseType Search , 6 => Area Search",
+            "format": "int32"
+          },
+          "subType": {
+            "type": "integer",
+            "description": "-1 => Default Value , 0 => More Of , 1 => Between , 2 => Less Of",
+            "format": "int32"
+          },
+          "typeStatus": {
+            "type": "integer",
+            "description": "0 => Default Value , 1 => Active , 2 => DeActive",
+            "format": "int32"
+          },
+          "value": {
+            "type": "string",
+            "nullable": true
+          },
+          "subValue": {
+            "type": "string",
+            "description": "This Prop For SubType.",
+            "nullable": true
+          },
+          "page": {
+            "type": "string",
+            "description": "Default Value => 1",
+            "nullable": true
+          },
+          "offSet": {
+            "type": "string",
+            "description": "Default Value => 10",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RefreshTokenRequest": {
+        "required": [
+          "accessToken",
+          "refreshToken"
+        ],
+        "type": "object",
+        "properties": {
+          "accessToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "refreshToken": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TownShipResponse": {
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusText": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TownShipResponseBaseResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/TownShipResponse"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TownShipResponseListBaseResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TownShipResponse"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TownShip_InsUp": {
+        "required": [
+          "name",
+          "number"
+        ],
+        "type": "object",
+        "properties": {
+          "number": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "name": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TownShip_Search": {
+        "required": [
+          "type",
+          "value"
+        ],
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "integer",
+            "description": "0 => Status Search , 1 => TownShip Search",
+            "format": "int32"
+          },
+          "value": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserInsert_Update": {
+        "required": [
+          "birthDay",
+          "familyName",
+          "fatherName",
+          "id",
+          "name",
+          "nationalNumber",
+          "password",
+          "userAccess",
+          "userGroup",
+          "userName",
+          "userType"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "userType": {
+            "type": "boolean"
+          },
+          "userGroup": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userName": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "password": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "name": {
+            "maxLength": 70,
+            "minLength": 0,
+            "type": "string"
+          },
+          "familyName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "mobileNumber": {
+            "maxLength": 14,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "nationalNumber": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string"
+          },
+          "fatherName": {
+            "maxLength": 70,
+            "minLength": 0,
+            "type": "string"
+          },
+          "birthDay": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userAccess": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserResponse": {
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "string",
+            "nullable": true
+          },
+          "userType": {
+            "type": "string",
+            "nullable": true
+          },
+          "userGroup": {
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "familyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "mobileNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "nationalNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusText": {
+            "type": "string",
+            "nullable": true
+          },
+          "userAccess": {
+            "type": "string",
+            "nullable": true
+          },
+          "fatherName": {
+            "type": "string",
+            "nullable": true
+          },
+          "birthDay": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserResponseBaseResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/UserResponse"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserResponseListBaseResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserResponse"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Enter Custom Token",
+        "scheme": "Bearer"
+      },
+      "ApiKey": {
+        "type": "apiKey",
+        "description": "Enter ApiKey",
+        "name": "ApiKey",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ],
+      "ApiKey": [ ]
+    }
+  ]
+}

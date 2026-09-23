@@ -1,0 +1,992 @@
+[
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Auth.AuthController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/v1/Auth/ChangePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.Login.ChangePasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Auth.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/v1/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.Login.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PropertyManagementProject.Response.Common.BaseResponse\u00601[[DataAccess.DTOs.Login.LoginResponse, DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Auth.AuthController",
+    "Method": "Logout",
+    "RelativePath": "api/v1/Auth/Logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.Models.Login.LogoutRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Auth.AuthController",
+    "Method": "Refresh",
+    "RelativePath": "api/v1/Auth/Refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.Models.Login.RefreshTokenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PropertyManagementProject.Response.Common.BaseResponse\u00601[[DataAccess.DTOs.Login.LoginResponse, DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Block.BlockController",
+    "Method": "ChangeStatus",
+    "RelativePath": "api/v1/Block/ChangeStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.Block.ChangeStatusBlock",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Block.BlockController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/Block/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.Block.DeleteBlockRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Block.BlockController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/Block/GetAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_Search",
+        "Type": "DataAccess.DTOs.Block.Block_Search",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PropertyManagementProject.Response.Common.BaseResponse\u00601[[System.Collections.Generic.List\u00601[[DataAccess.Models.Block.BlockResponse, DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Block.BlockController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/Block/GetById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requset",
+        "Type": "DataAccess.DTOs.Block.GetBlocksById",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PropertyManagementProject.Response.Common.BaseResponse\u00601[[DataAccess.Models.Block.BlockResponse, DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Block.BlockController",
+    "Method": "Insert",
+    "RelativePath": "api/v1/Block/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.Block.Block_InsUp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Block.BlockController",
+    "Method": "Update",
+    "RelativePath": "api/v1/Block/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.Block.Block_InsUp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.BoardMembers.BoardMembersController",
+    "Method": "ChangeStatus",
+    "RelativePath": "api/v1/BoardMembers/ChangeStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.BoardMembers.ChangeStatusBoardMembers",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.BoardMembers.BoardMembersController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/BoardMembers/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.BoardMembers.DeleteBoardMembersRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.BoardMembers.BoardMembersController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/BoardMembers/GetAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_Search",
+        "Type": "DataAccess.DTOs.BoardMembers.BoardMembers_Search",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PropertyManagementProject.Response.Common.BaseResponse\u00601[[System.Collections.Generic.List\u00601[[DataAccess.Models.BoardMembers.BoardMembersResponse, DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.BoardMembers.BoardMembersController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/BoardMembers/GetById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requset",
+        "Type": "DataAccess.DTOs.BoardMembers.GetBoardMembersById",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PropertyManagementProject.Response.Common.BaseResponse\u00601[[DataAccess.Models.BoardMembers.BoardMembersResponse, DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.BoardMembers.BoardMembersController",
+    "Method": "Insert",
+    "RelativePath": "api/v1/BoardMembers/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.BoardMembers.BoardMembers_InsUp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.BoardMembers.BoardMembersController",
+    "Method": "Update",
+    "RelativePath": "api/v1/BoardMembers/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.BoardMembers.BoardMembers_InsUp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.OfficialExperts.OfficialExpertsController",
+    "Method": "ChangeStatus",
+    "RelativePath": "api/v1/OfficialExperts/ChangeStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.OfficialExperts.ChangeStatusOfficialExperts",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.OfficialExperts.OfficialExpertsController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/OfficialExperts/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.OfficialExperts.DeleteOfficialExpertsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.OfficialExperts.OfficialExpertsController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/OfficialExperts/GetAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_Search",
+        "Type": "DataAccess.DTOs.OfficialExperts.OfficialExperts_Search",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PropertyManagementProject.Response.Common.BaseResponse\u00601[[System.Collections.Generic.List\u00601[[DataAccess.Models.OfficialExperts.OfficialExpertsResponse, DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.OfficialExperts.OfficialExpertsController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/OfficialExperts/GetById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requset",
+        "Type": "DataAccess.DTOs.OfficialExperts.GetOfficialExpertsById",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PropertyManagementProject.Response.Common.BaseResponse\u00601[[DataAccess.Models.OfficialExperts.OfficialExpertsResponse, DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.OfficialExperts.OfficialExpertsController",
+    "Method": "Insert",
+    "RelativePath": "api/v1/OfficialExperts/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.OfficialExperts.OfficialExperts_InsUp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.OfficialExperts.OfficialExpertsController",
+    "Method": "Update",
+    "RelativePath": "api/v1/OfficialExperts/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.OfficialExperts.OfficialExperts_InsUp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Plot.PlotController",
+    "Method": "ChangeStatus",
+    "RelativePath": "api/v1/Plot/ChangeStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.Plot.ChangeStatusPlot",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Plot.PlotController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/Plot/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.Plot.DeletePlotRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Plot.PlotController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/Plot/GetAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_Search",
+        "Type": "DataAccess.DTOs.Plot.Plot_Search",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PropertyManagementProject.Response.Common.BaseResponse\u00601[[System.Collections.Generic.List\u00601[[DataAccess.Models.Plot.PlotResponse, DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Plot.PlotController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/Plot/GetById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requset",
+        "Type": "DataAccess.DTOs.Plot.GetPlotsById",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PropertyManagementProject.Response.Common.BaseResponse\u00601[[DataAccess.Models.Plot.PlotResponse, DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Plot.PlotController",
+    "Method": "GetLandUseType",
+    "RelativePath": "api/v1/Plot/GetLandUseType",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PropertyManagementProject.Response.Common.BaseResponse\u00601[[System.Collections.Generic.List\u00601[[DataAccess.Models.Plot.LandUseTypeResponse, DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Plot.PlotController",
+    "Method": "Insert",
+    "RelativePath": "api/v1/Plot/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.Plot.Plot_InsUp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Plot.PlotController",
+    "Method": "Update",
+    "RelativePath": "api/v1/Plot/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.Plot.Plot_InsUp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.TownShip.TownShipController",
+    "Method": "ChangeStatus",
+    "RelativePath": "api/v1/TownShip/ChangeStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.TownShip.ChangeStatusTownShip",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.TownShip.TownShipController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/TownShip/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.TownShip.DeleteTownShipRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.TownShip.TownShipController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/TownShip/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PropertyManagementProject.Response.Common.BaseResponse\u00601[[System.Collections.Generic.List\u00601[[DataAccess.Models.TownShip.TownShipResponse, DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.TownShip.TownShipController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/TownShip/GetById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requset",
+        "Type": "DataAccess.DTOs.TownShip.GetTownShipById",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PropertyManagementProject.Response.Common.BaseResponse\u00601[[DataAccess.Models.TownShip.TownShipResponse, DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.TownShip.TownShipController",
+    "Method": "Insert",
+    "RelativePath": "api/v1/TownShip/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.TownShip.TownShip_InsUp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.TownShip.TownShipController",
+    "Method": "TownShipSearch",
+    "RelativePath": "api/v1/TownShip/TownShipSearch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requset",
+        "Type": "DataAccess.DTOs.TownShip.TownShip_Search",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PropertyManagementProject.Response.Common.BaseResponse\u00601[[System.Collections.Generic.List\u00601[[DataAccess.Models.TownShip.TownShipResponse, DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.TownShip.TownShipController",
+    "Method": "Update",
+    "RelativePath": "api/v1/TownShip/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.TownShip.TownShip_InsUp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Users.UsersController",
+    "Method": "ChangeStatus",
+    "RelativePath": "api/v1/User/ChangeStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.Users.ChangeStatusUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Users.UsersController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/User/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.Users.DeleteUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Users.UsersController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/User/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PropertyManagementProject.Response.Common.BaseResponse\u00601[[System.Collections.Generic.List\u00601[[DataAccess.Models.Users.UserResponse, DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Users.UsersController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/User/GetById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requset",
+        "Type": "DataAccess.DTOs.Users.GetUserById",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PropertyManagementProject.Response.Common.BaseResponse\u00601[[DataAccess.Models.Users.UserResponse, DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Users.UsersController",
+    "Method": "Insert",
+    "RelativePath": "api/v1/User/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.Users.UserInsert_Update",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PropertyManagementProject.Controllers.Users.UsersController",
+    "Method": "Update",
+    "RelativePath": "api/v1/User/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DataAccess.DTOs.Users.UserInsert_Update",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

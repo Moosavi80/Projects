@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataAccess</name>
+    </assembly>
+    <members>
+        <member name="P:DataAccess.DTOs.Block.Block_Search.Type">
+            <summary>
+            -1 => Default Value , 1 => TownShip Search , 2=> Block Search
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.Block.Block_Search.TypeStatus">
+            <summary>
+            0 => Default Value , 1 => Active , 2 => DeActive
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.Block.Block_Search.Page">
+            <summary>
+            Default Value => 1
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.Block.Block_Search.OffSet">
+            <summary>
+            Default Value => 10
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.BoardMembers.BoardMembers_Search.Type">
+            <summary>
+            -1 => Default Value , 1 => FamilyName Search
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.BoardMembers.BoardMembers_Search.TypeStatus">
+            <summary>
+            0 => Default Value , 1 => Active , 2 => DeActive
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.BoardMembers.BoardMembers_Search.Page">
+            <summary>
+            Default Value => 1
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.BoardMembers.BoardMembers_Search.OffSet">
+            <summary>
+            Default Value => 10
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.OfficialExperts.OfficialExperts_Search.Type">
+            <summary>
+            -1 => Default Value , 1 => Name And FamilyName Search , 2 => ExpertLicenseNumber Search
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.OfficialExperts.OfficialExperts_Search.TypeStatus">
+            <summary>
+            0 => Default Value , 1 => Active , 2 => DeActive
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.OfficialExperts.OfficialExperts_Search.Page">
+            <summary>
+            Default Value => 1
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.OfficialExperts.OfficialExperts_Search.OffSet">
+            <summary>
+            Default Value => 10
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.Plot.Plot_Search.Type">
+            <summary>
+            -1 => Default Value , 1 => TownShip Search , 2=> Block Search , 3=> Plots Search
+            4 => CadastralNumber Search , 5 => LandUseType Search , 6 => Area Search
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.Plot.Plot_Search.SubType">
+            <summary>
+            -1 => Default Value , 0 => More Of , 1 => Between , 2 => Less Of
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.Plot.Plot_Search.TypeStatus">
+            <summary>
+            0 => Default Value , 1 => Active , 2 => DeActive
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.Plot.Plot_Search.SubValue">
+            <summary>
+            This Prop For SubType.
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.Plot.Plot_Search.Page">
+            <summary>
+            Default Value => 1
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.Plot.Plot_Search.OffSet">
+            <summary>
+            Default Value => 10
+            </summary>
+        </member>
+        <member name="P:DataAccess.DTOs.TownShip.TownShip_Search.Type">
+            <summary>
+            0 => Status Search , 1 => TownShip Search
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,12 @@
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\Core\bin\Debug\net7.0\Core.deps.json
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\Core\bin\Debug\net7.0\Core.dll
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\Core\bin\Debug\net7.0\Core.pdb
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\Core\obj\Debug\net7.0\Core.dll
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\Core\obj\Debug\net7.0\refint\Core.dll
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\Core\obj\Debug\net7.0\Core.pdb
+D:\solution_visual\MVCProject_ClipShare\ClipShare(Youtube)\Core\obj\Debug\net7.0\ref\Core.dll
