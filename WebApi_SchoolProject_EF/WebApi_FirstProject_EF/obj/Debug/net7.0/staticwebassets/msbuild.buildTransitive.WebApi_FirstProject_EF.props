@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\WebApi_FirstProject_EF.props" />
-</Project>
